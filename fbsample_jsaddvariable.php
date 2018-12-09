@@ -37,6 +37,7 @@ class FbSample_JsAddVariable extends Module
         $this->version = '1.0.0';
         $this->need_instance = 0;
         $this->bootstrap = true;
+        $this->tab = 'others';
         parent::__construct();
 
         $this->displayName = $this->l('Add value in prestashop JS var');
@@ -51,7 +52,8 @@ class FbSample_JsAddVariable extends Module
     }
 
 
-    public function hookActionBuildFrontEndObject(&$params) {
+    public function hookActionBuildFrontEndObject(&$params)
+    {
         // contains all the data in the prestashop object
         $prestashopObject =& $params['obj'];
         
