@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
     <name>fbsample_jsaddvariable</name>
-    <displayName><![CDATA[Sample module]]></displayName>
+    <displayName><![CDATA[Add value in prestashop JS var]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Add JS Variable in prestashop global var (PrestaShop 1.7.3.1)]]></description>
+    <description><![CDATA[Add custom value in prestashop JavaSript var.]]></description>
     <author><![CDATA[Fr&eacute;d&eacute;ric BENOIST]]></author>
-    <tab><![CDATA[]]></tab>
+    <tab><![CDATA[others]]></tab>
     <is_configurable>0</is_configurable>
     <need_instance>0</need_instance>
 	<limited_countries></limited_countries>
