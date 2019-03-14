@@ -37,7 +37,7 @@ class FbSample_JsAddVariable extends Module
         $this->ps_versions_compliancy = array('min' => '1.7.3.1', 'max' => _PS_VERSION_);
         $this->description = $this->l('Add custom value in prestashop JavaSript var.');
     }
-    
+
     public function install()
     {
         return parent::install()
@@ -47,10 +47,6 @@ class FbSample_JsAddVariable extends Module
 
     public function hookActionBuildFrontEndObject(&$params)
     {
-        // contains all the data in the prestashop object
-        $prestashopObject =& $params['obj'];
-        
-        // add custom data like this
-        $prestashopObject['my_custom_data'] = 'my custom value';
+        $params['obj']['my_custom_data'] = 'my custom value';
     }
 }
