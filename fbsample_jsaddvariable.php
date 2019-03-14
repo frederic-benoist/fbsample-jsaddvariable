@@ -44,7 +44,6 @@ class FbSample_JsAddVariable extends Module
             && $this->registerHook('actionBuildFrontEndObject');
     }
 
-
     public function hookActionBuildFrontEndObject(&$params)
     {
         $params['obj']['my_custom_data'] = 'my custom value';
